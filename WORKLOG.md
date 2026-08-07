@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-08-07 — BJ Set-Up 보고서: 원본 템플릿 기반 재생성
+
+- 사용자가 JG EV Volt Sensing PCB ASSY 원본 PPT 업로드 (GlowOne 정식 템플릿 포함)
+- 원본 파일의 슬라이드 마스터/레이아웃(로고 이미지, 좌측 바, 장식, 푸터)을 그대로 사용해
+  `docs/BJ검사기-Set-Up-완료보고서.pptx` 전면 재생성 (6장: 표지/LAYOUT/HIPOT/EOL/개선·이상 리스트/UPH)
+- 빌드 방법: 원본 pptx에 add_slide.py로 슬라이드 1장 복제 → python-pptx로 기존 내용 삭제 후 BJ 내용 삽입
+  (빌드 스크립트: 세션 스크래치패드 build_bj_from_template.py — 원본 파일은 대외비라 저장소에 미포함)
+- 주의: 원본 JG 파일들(통전검사 방법, Volt Sensing 검증)은 대외비로 판단되어 저장소에 커밋하지 않음
+
 ## 2026-08-07 — SX3K 코팅 Section 자료 작성
 
 - 처음에 JG EV Coating D.O.E Report 양식을 전달받아 DOE Report로 만들었으나,
