@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-08-07 — SX3K Coating D.O.E Report 틀 작성
+
+- JG EV Coating D.O.E Report 양식(구조) 전달받아 SX3K 버전 제작 (디자인은 기존 GlowOne 스타일 유지)
+- `docs/SX3K-Coating-DOE-Report.pptx` 생성 (5장 구성)
+  1. 목적 / 재원(Coating liquid·Machine — 공급사/Type 미정) / Base Parameter(토출압, Tap/Fuse Nozzle Speed 미정)
+  2. DOE results — M/C Head별 중량 측정 사진 그리드 (No × Fuse1/Tap×3/Fuse, M/C 구성은 SX3K 기준으로 수정 예정)
+  3. DOE results — Tap/Fuse 중량(g) 데이터 표 (15회 + MIN/MAX/AVR, 값 미기입)
+  4. 두께 측정 이미지 — Point.1 [부위명 미정] / Point.2 (커넥터) × PCB Board #1~3
+  5. Summary — Coating Area Size, 평균 중량, SPEC 산정 문구 틀 (수치 미정)
+- 두께 측정 사진 4종 전달받음 → 측정 부위 4곳으로 확정 (Point 순서는 확인 필요)
+  - 센싱탭: 1292 / 1098 / 1105 / 1225 um
+  - 퓨즈: 903 / 784 / 843 um
+  - 커넥터: 689 / 748 / 986 / 954 um
+  - NTC: 154(?) / 159 / 203 um
+- 다음 할 일: 실제 SX3K 섹션 자료 수신 후 데이터 기입 (재원, Base Parameter, 측정값, Summary 수치)
+
 ## 2026-08-05 — BJ 검사기 설비 셋업 완료 보고서 작성
 
 - 회사 양식(GlowOne, JG EV 검사기 Set-Up 완료 보고서 PPT) 확인 → 동일 구조로 BJ 버전 PPT 제작
