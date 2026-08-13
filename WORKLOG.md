@@ -28,6 +28,11 @@
      불충분, p:style 요소 자체를 제거(no_style)해야 완전히 해결
 - 이 버그들은 jg_setup.pptx 템플릿을 사용하는 다른 python-pptx 기반 산출물(BJ CAPA
   제안서, BJ BSA CAPA 제안서 등)에도 동일하게 존재할 가능성 있음 — 추후 점검 필요
+- **원본 JG 슬라이드 제거**: 지금까지는 jg_setup.pptx 템플릿의 원본 JG 슬라이드 5장이
+  파일 앞부분에 그대로 남아있었음(SX3K 7장은 그 뒤에 이어붙는 구조, 총 12장, 27MB).
+  사용자 요청으로 unzip → presentation.xml의 sldIdLst에서 원본 5장 참조 제거 →
+  clean.py로 고아 파트(슬라이드 XML 5개, 미디어 33개, 임베딩 엑셀/OLE 20개 등 총 73개
+  파일) 삭제 → 재압축. 결과: 12장→7장(SX3K만), 27MB→83KB. 전체 슬라이드 겹침 재검증 완료
 
 ---
 
